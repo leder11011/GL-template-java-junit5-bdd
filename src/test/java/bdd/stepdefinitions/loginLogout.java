@@ -92,7 +92,7 @@ public class loginLogout {
 
         button.click();
 
-        Thread.sleep(2000);
+        Thread.sleep(4000);
 
         WebElement logged_in = driver.findElement(By.xpath("//h1[contains(.,' test test')]"));
 
