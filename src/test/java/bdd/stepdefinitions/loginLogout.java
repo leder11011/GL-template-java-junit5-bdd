@@ -18,7 +18,7 @@ import org.junit.Assert;
 import java.time.Duration;
 
 public class loginLogout {
-    public static final String PAGE_TITLE = "ALDI ONLINESHOP - Gutes für alle";
+    public static final String PAGE_TITLE = "ALDI ONLINESHOP - GUTES FÜR ALLE.";
     public static final String MAIL = "xc9vfn@re-gister.com";
     public static final String PASSWORD = "9R64wTB4mUhKXUjdP8vI!";
 
@@ -94,7 +94,7 @@ public class loginLogout {
 
         Thread.sleep(2000);
 
-        WebElement logged_in = driver.findElement(By.xpath("//div[contains(.,' test test')]"));
+        WebElement logged_in = driver.findElement(By.xpath("//h1[contains(.,' test test')]"));
 
         Assert.assertTrue("Logged in", logged_in.isDisplayed());
     }
